@@ -37,7 +37,7 @@ class ResBlock(chainer.Chain):
     def __call__(self, x, test):
         h = self.c0(x)
         if self.bn:
-            h = self.bn0(h, test=test)
+            h = self.bn0(h)
         h = self.activation(h)
         h = self.c1(h)
         if self.bn:
