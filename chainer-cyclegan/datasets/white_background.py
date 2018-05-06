@@ -18,6 +18,8 @@ class white_train(datasets_base):
         self.trainBkey = glob.glob(dataset_path + "pixiv/*.png")
 
     def __len__(self):
+        print(len(self.trainAkey))
+        print(len(self.trainBkey))
         return len(self.trainBkey)
 
     def do_resize(self, img):
