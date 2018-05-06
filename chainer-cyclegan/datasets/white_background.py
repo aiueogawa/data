@@ -14,7 +14,7 @@ class white_train(datasets_base):
     def __init__(self, dataset_path=paths.root_white, flip=1, resize_to=280, crop_to=256):
         super(white_train, self).__init__(flip=flip, resize_to=resize_to, crop_to=crop_to)
         self.dataset_path = dataset_path
-        self.trainAkey = glob.glob(dataset_path + "getch/*.jpg")
+        self.trainAkey = glob.glob(dataset_path + "getchu/*.jpg")
         self.trainBkey = glob.glob(dataset_path + "pixiv/*.png")
 
     def __len__(self):
