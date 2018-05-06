@@ -80,7 +80,7 @@ class CBR(chainer.Chain):
         else:
             print("unknown sample method %s"%self.sample)
         if self.bn:
-            h = self.batchnorm(h, test=test)
+            h = self.batchnorm(h)
         if self.noise:
             h = add_noise(h, test=test)
         if self.dropout:
